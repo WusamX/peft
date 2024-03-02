@@ -41,6 +41,8 @@ from .tuners import (
     LoKrModel,
     LoraConfig,
     LoraModel,
+    AdapterConfig,
+    AdapterModel,
     MultitaskPromptTuningConfig,
     PrefixTuningConfig,
     PromptEncoderConfig,
@@ -73,6 +75,7 @@ PEFT_TYPE_TO_CONFIG_MAPPING: Dict[str, PeftConfig] = {
     "ADALORA": AdaLoraConfig,
     "IA3": IA3Config,
     "MULTITASK_PROMPT_TUNING": MultitaskPromptTuningConfig,
+    "ADAPTER": AdapterConfig,
 }
 
 PEFT_TYPE_TO_TUNER_MAPPING = {
@@ -81,6 +84,7 @@ PEFT_TYPE_TO_TUNER_MAPPING = {
     "LOKR": LoKrModel,
     "ADALORA": AdaLoraModel,
     "IA3": IA3Model,
+    "ADAPTER": AdapterModel,
 }
 
 
